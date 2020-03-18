@@ -27,6 +27,12 @@ public class Body {
         return stdWeight;
     }
     
+    public double calcBmi() {                                     //BMI計算メソッド
+        double meterHeight = height / 100.0;
+        double bmiValue = weight / (meterHeight * meterHeight);
+        return bmiValue;
+    }
+    
     public void set(String name, double height, double weight) {  //値を設定する
         this.name = name;
         this.height = height;
